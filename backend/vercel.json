@@ -5,7 +5,8 @@
       "src": "/src/index.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["../frontend/dist/**"]
+        "includeFiles": ["../frontend/dist/**"],
+        "buildCommand": "prisma generate && yarn build"
       }
     }
   ],
