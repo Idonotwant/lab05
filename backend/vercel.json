@@ -6,7 +6,7 @@
       "use": "@vercel/node",
       "config": {
         "includeFiles": ["../frontend/dist/**"],
-        "buildCommand": "prisma generate && yarn build"
+        "buildCommand": "yarn prisma migrate deploy && node --experimental-specifier-resolution=node src/index.js"
       }
     }
   ],
