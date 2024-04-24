@@ -18,7 +18,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://lab05-ba4bw85u9-davids-projects-cd7aeacc.vercel.app/",
+        target: "https://lab05-fawn.vercel.app/",
         changeOrigin: true,
       },
     },
