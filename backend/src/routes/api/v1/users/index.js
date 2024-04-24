@@ -5,7 +5,6 @@ import {
   modContent,
   deleteContent,
   login,
-  getOneUser,
   createOneUser,
 } from "./handlers.js";
 import multer from "multer";
@@ -17,5 +16,4 @@ router.post("/modContent", modContent);
 router.post("/deleteContent", deleteContent);
 router.post(`/login`, login);
 router.post(`/`, upload.single("picture"), createOneUser);
-router.get(`/:id`, getOneUser);
 export default router;
